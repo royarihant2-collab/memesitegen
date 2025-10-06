@@ -1,0 +1,43 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<div class="container">
+  <h1 class="title">MemeMaker ✨</h1>
+
+  <div class="panel glass">
+    <h3>🔥 Popular Templates</h3>
+    <div class="template-gallery" id="templateGallery">
+      <img src="https://i.imgflip.com/3oevdk.jpg" alt="Drake Hotline" title="Drake Hotline Bling">
+      <img src="https://i.imgflip.com/4t0m5.jpg" alt="Distracted Boyfriend" title="Distracted Boyfriend">
+      <img src="https://i.imgflip.com/30b1gx.jpg" alt="Expanding Brain" title="Expanding Brain">
+      <img src="https://i.imgflip.com/1ur9b0.jpg" alt="Megamind" title="Megamind No Bitches">
+      <img src="https://i.imgflip.com/26am.jpg" alt="Grumpy Cat" title="Grumpy Cat">
+    </div>
+
+    <div class="controls">
+      <input type="file" id="imageUpload" accept="image/*" />
+      <button id="addText">➕ Add Text</button>
+      <button id="downloadMeme">⬇️ Download Meme</button>
+    </div>
+
+    <div class="options">
+      <label>Font size: 
+        <input type="number" id="fontSize" value="36" min="10" max="100">
+      </label>
+      <label>Color: 
+        <input type="color" id="fontColor" value="#ffffff">
+      </label>
+      <label>Font: 
+        <select id="fontFamily">
+          <option value="Impact">Impact</option>
+          <option value="Poppins">Poppins</option>
+          <option value="Comic Sans MS">Comic Sans</option>
+          <option value="Times New Roman">Times</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <div class="meme-area" id="memeArea">
+    <canvas id="memeCanvas"></canvas>
+  </div>
+</div>
